@@ -18,21 +18,32 @@ module.exports = {
     'sourceType': 'module'
   },
   'rules': {
+    'no-var': 'error',
+    'prefer-const': 'error',
+
     'indent': [
       'error',
       2
-    ],
-    'linebreak-style': [
-      'error',
-      'unix'
     ],
     'quotes': [
       'error',
       'single'
     ],
-    'semi': [
+    'arrow-body-style': [
       'error',
-      'never'
+      'as-needed'
+    ],
+    'no-multiple-empty-lines': [
+      'error',
+      { 'max': 1, 'maxEOF': 1 }
+    ],
+    'max-len': [
+      'error',
+      { 'code': 120 }
+    ],
+    'eol-last': [
+      'error',
+      'always'
     ]
   }
 }
