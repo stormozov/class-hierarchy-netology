@@ -1,5 +1,7 @@
 # Домашнее задание к лекции «Классы, наследование»
 
+[![Build status](https://ci.appveyor.com/api/projects/status/nv0cdy42f4dqjghp?svg=true)](https://ci.appveyor.com/project/stormozov/class-hierarchy-netology)
+
 **Важно**: каждая задача выполняется в виде отдельного проекта с собственным GitHub репозиторием.
 
 **Важно**: код должен проходить ESLint без ошибок.

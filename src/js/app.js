@@ -1,6 +1,4 @@
-// TODO: write your code here
-import sum from './basic';
+import * as CHR from './character/index';
 
-console.log('worked');
-
-console.log(sum([1, 2]));
+const bowerman = new CHR.Bowerman('Робин');
+bowerman.showAttributes();
