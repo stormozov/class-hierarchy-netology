@@ -1,15 +1,15 @@
-import Bowerman from '../Bowerman';
+import Undead from '../Undead';
 import Character from '../Character';
 
-describe('Bowerman', () => {
+describe('Undead', () => {
   let instance;
-  
+
   beforeEach(() => {
-    instance = new Bowerman('Робин');
+    instance = new Undead('Робин');
   });
-  
+
   test('Должен создать экземпляр класса', () => {
-    expect(instance).toBeInstanceOf(Bowerman);
+    expect(instance).toBeInstanceOf(Undead);
   });
 
   test('Должен наследоваться от класса Character', () => {

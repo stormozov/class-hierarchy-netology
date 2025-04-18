@@ -6,7 +6,7 @@ export default class Character {
   /**
    * Валидные типы персонажа.
    */
-  static validTypes = [
+  static #validTypes = [
     'Bowman', 
     'Swordsman', 
     'Magician', 
@@ -63,7 +63,7 @@ export default class Character {
       throw new Error('Имя должно быть строкой длиной от 2 до 10 символов.');
     }
 
-    if (!Character.validTypes.includes(type)) {
+    if (!Character.#validTypes.includes(type)) {
       throw new Error('Некорректный тип персонажа.');
     }
   }

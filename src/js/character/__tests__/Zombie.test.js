@@ -1,15 +1,15 @@
-import Bowerman from '../Bowerman';
+import Zombie from '../Zombie';
 import Character from '../Character';
 
-describe('Bowerman', () => {
+describe('Zombie', () => {
   let instance;
-  
+
   beforeEach(() => {
-    instance = new Bowerman('Робин');
+    instance = new Zombie('Робин');
   });
-  
+
   test('Должен создать экземпляр класса', () => {
-    expect(instance).toBeInstanceOf(Bowerman);
+    expect(instance).toBeInstanceOf(Zombie);
   });
 
   test('Должен наследоваться от класса Character', () => {
@@ -36,7 +36,7 @@ describe('Bowerman', () => {
   });
 
   test('Должен установить атрибуты', () => {
-    expect(instance.attack).toBe(25);
-    expect(instance.defense).toBe(25);
+    expect(instance.attack).toBe(40);
+    expect(instance.defense).toBe(10);
   });
 });
